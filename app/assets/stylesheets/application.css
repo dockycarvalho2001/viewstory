@@ -23,4 +23,6 @@
  *= require bower_components/bootstrap-daterangepicker/daterangepicker.css
  *= require plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css
  *= require plugins/iCheck/square/blue.css
+ *= require bower_components/fullcalendar/dist/fullcalendar.min.css
+ *= require bower_components/fullcalendar/dist/fullcalendar.print.min.css
  */

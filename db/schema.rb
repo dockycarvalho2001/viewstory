@@ -10,7 +10,62 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_11_08_141620) do
+ActiveRecord::Schema.define(version: 2018_11_12_140520) do
+
+  create_table "calendars", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "clients", force: :cascade do |t|
+    t.string "name"
+    t.string "cpf"
+    t.string "address"
+    t.string "number_phone"
+    t.date "date_of_birth"
+    t.string "email"
+    t.string "sex"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "compromissos", force: :cascade do |t|
+    t.string "titulo"
+    t.text "texto"
+    t.date "date"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "employees", force: :cascade do |t|
+    t.string "name"
+    t.string "cpf"
+    t.string "address"
+    t.string "number_phone"
+    t.date "date_of_birth"
+    t.string "email"
+    t.string "sex"
+    t.string "store"
+    t.string "department"
+    t.string "function"
+    t.string "salary"
+    t.date "admission"
+    t.date "resignation"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "products", force: :cascade do |t|
+    t.string "name"
+    t.string "brand"
+    t.string "provider"
+    t.string "quantity_in_stock"
+    t.string "price"
+    t.string "cost"
+    t.string "code"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "testes", force: :cascade do |t|
     t.datetime "created_at", null: false

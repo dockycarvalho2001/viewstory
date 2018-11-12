@@ -12,8 +12,9 @@
 //
 //= require rails-ujs
 //= require activestorage
-//= require turbolinks
+// require turbolinks
 //= require_tree .
+
 //= require bower_components/jquery/dist/jquery.min.js
 //= require bower_components/jquery-ui/jquery-ui.min.js
 //= require bower_components/bootstrap/dist/js/bootstrap.min.js
@@ -30,6 +31,8 @@
 //= require bower_components/jquery-slimscroll/jquery.slimscroll.min.js
 //= require bower_components/fastclick/lib/fastclick.js
 //= require dist/js/adminlte.min.js
-//= require dist/js/pages/dashboard.js
+// require dist/js/pages/dashboard.js
 //= require dist/js/demo.js
 //= require plugins/iCheck/icheck.min.js
+//= require bower_components/moment/moment.js
+//= require bower_components/fullcalendar/dist/fullcalendar.min.js

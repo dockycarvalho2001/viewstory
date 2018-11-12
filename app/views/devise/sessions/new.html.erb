@@ -1,26 +1,62 @@
-<h2>Log in</h2>
 
-<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-  <div class="field">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+</head>
+<body class="hold-transition login-page">
+<div class="login-box">
+  <div class="login-logo">
+    <a href="../../index2.html"><b>View</b>Store</a>
+  </div>
+  <!-- /.login-logo -->
+  <div class="login-box-body">
+    <p class="login-box-msg">Sign in to start your session</p>
+
+    <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+      <div class="field" >
     <%= f.label :email %><br />
     <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
   </div>
-
-  <div class="field">
+      <div class="field">
     <%= f.label :password %><br />
     <%= f.password_field :password, autocomplete: "current-password" %>
   </div>
-
-  <% if devise_mapping.rememberable? -%>
+      <% if devise_mapping.rememberable? -%>
     <div class="field">
       <%= f.check_box :remember_me %>
       <%= f.label :remember_me %>
     </div>
   <% end -%>
-
+        <!-- /.col -->
+        
   <div class="actions">
-    <%= f.submit "Log in" %>
+    <button  class="btn btn-primary btn-block btn-flat" <%= f.submit "Log in" %>Log In
+    </button>
   </div>
+    <%= render "devise/shared/links" %>
+  
 <% end %>
+        <!-- /.col -->
+      </div>
+    </form>
 
-<%= render "devise/shared/links" %>
+
+  </div>
+  <!-- /.login-box-body -->
+</div>
+<!-- /.login-box -->
+
+<!-- jQuery 3 -->
+<script src="../../bower_components/jquery/dist/jquery.min.js"></script>
+<!-- Bootstrap 3.3.7 -->
+<script src="../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- iCheck -->
+<script src="../../plugins/iCheck/icheck.min.js"></script>
+<script>
+  $(function () {
+    $('input').iCheck({
+      checkboxClass: 'icheckbox_square-blue',
+      radioClass: 'iradio_square-blue',
+      increaseArea: '20%' /* optional */
+    });
+  });
+</script>
+</body>

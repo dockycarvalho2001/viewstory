@@ -50,6 +50,7 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'devise'
   gem 'cancancan'
+  gem "watu_table_builder", :require => "table_builder"
 end
 
 group :test do
