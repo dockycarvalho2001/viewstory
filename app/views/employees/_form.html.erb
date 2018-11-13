@@ -10,73 +10,86 @@
       </ul>
     </div>
   <% end %>
-
+<div class="form-row">
+    <div class="form-group col-md-6">
   <div class="field">
-    <%= form.label :name %>
+    <%= form.label :name %><br>
     <%= form.text_field :name %>
   </div>
 
   <div class="field">
-    <%= form.label :cpf %>
+    <%= form.label :cpf %><br>
     <%= form.text_field :cpf %>
   </div>
 
   <div class="field">
-    <%= form.label :address %>
+    <%= form.label :address %><br>
     <%= form.text_field :address %>
   </div>
+</div>
 
+
+<div class="form-row">
+    <div class="form-group col-md-6">
   <div class="field">
-    <%= form.label :number_phone %>
+    <%= form.label :number_phone %><br>
     <%= form.text_field :number_phone %>
   </div>
 
   <div class="field">
-    <%= form.label :date_of_birth %>
+    <%= form.label :date_of_birth %><br>
     <%= form.date_select :date_of_birth %>
   </div>
 
   <div class="field">
-    <%= form.label :email %>
+    <%= form.label :email %><br>
     <%= form.text_field :email %>
   </div>
+</div>
 
+<div class="form-row">
+    <div class="form-group col-md-6">
   <div class="field">
-    <%= form.label :sex %>
+    <%= form.label :sex %><br>
     <%= form.text_field :sex %>
   </div>
 
   <div class="field">
-    <%= form.label :store %>
+    <%= form.label :store %><br>
     <%= form.text_field :store %>
   </div>
 
   <div class="field">
-    <%= form.label :department %>
+    <%= form.label :department %><br>
     <%= form.text_field :department %>
   </div>
 
   <div class="field">
-    <%= form.label :function %>
+    <%= form.label :function %><br>
     <%= form.text_field :function %>
   </div>
 
+</div>
+
+<div class="form-row">
+    <div class="form-group col-md-6">
   <div class="field">
-    <%= form.label :salary %>
+    <%= form.label :salary %><br>
     <%= form.text_field :salary %>
   </div>
 
   <div class="field">
-    <%= form.label :admission %>
+    <%= form.label :admission %><br>
     <%= form.date_select :admission %>
   </div>
 
   <div class="field">
-    <%= form.label :resignation %>
+    <%= form.label :resignation %><br>
     <%= form.date_select :resignation %>
   </div>
 
   <div class="actions">
     <%= form.submit %>
+  </div>
   </div>
 <% end %>

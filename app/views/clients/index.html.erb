@@ -7,10 +7,6 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
   </head>   
-<p id="notice"><%= notice %></p>
-
-<h1>Clients</h1>
-
 
 <body>
   <body class="hold-transition skin-blue sidebar-mini">
@@ -119,52 +115,12 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li class="active"><a href="index.html"><i class="fa fa-circle-o"></i> Dashboard v1</a></li>
-            <li><a href="index2.html"><i class="fa fa-circle-o"></i> Dashboard v2</a></li>
-          </ul>
-        </li>
-        <li class="treeview">
-          <a href="#">
-            <i class="fa fa-pie-chart"></i>
-            <span>Charts</span>
-            <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
-            </span>
-          </a>
-          <ul class="treeview-menu">
-            <li><a href="pages/charts/chartjs.html"><i class="fa fa-circle-o"></i> ChartJS</a></li>
-            <li><a href="pages/charts/morris.html"><i class="fa fa-circle-o"></i> Morris</a></li>
-            <li><a href="pages/charts/flot.html"><i class="fa fa-circle-o"></i> Flot</a></li>
-            <li><a href="pages/charts/inline.html"><i class="fa fa-circle-o"></i> Inline charts</a></li>
-          </ul>
-        </li>
-        <li class="treeview">
-          <a href="#">
-            <i class="fa fa-edit"></i> <span>Forms</span>
-            <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
-            </span>
-          </a>
-          <ul class="treeview-menu">
-            <li><a href="pages/forms/general.html"><i class="fa fa-circle-o"></i> General Elements</a></li>
-            <li><a href="pages/forms/advanced.html"><i class="fa fa-circle-o"></i> Advanced Elements</a></li>
-            <li><a href="pages/forms/editors.html"><i class="fa fa-circle-o"></i> Editors</a></li>
-          </ul>
-        </li>
-        <li class="treeview">
-          <a href="#">
-            <i class="fa fa-table"></i> <span>Tables</span>
-            <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
-            </span>
-          </a>
-          <ul class="treeview-menu">
-            <li><a href="pages/tables/simple.html"><i class="fa fa-circle-o"></i> Simple tables</a></li>
-            <li><a href="pages/tables/data.html"><i class="fa fa-circle-o"></i> Data tables</a></li>
+            <li class="active"><a href="http://localhost:3000/products"><i class="fa fa-circle-o"></i> Produtos</a></li>
+            <li><a href="http://localhost:3000/clients"><i class="fa fa-circle-o"></i> Clientes</a></li>
           </ul>
         </li>
         <li>
-          <a href="http://localhost:3000/calendars">
+          <a href="http://localhost:3000/compromissos">
             <i class="fa fa-calendar"></i> <span>Calendario</span>
             <span class="pull-right-container">
               <small class="label pull-right bg-red">3</small>
@@ -172,33 +128,9 @@
             </span>
           </a>
         </li>
-        <li>
-          <a href="pages/mailbox/mailbox.html">
-            <i class="fa fa-envelope"></i> <span>Mailbox</span>
-            <span class="pull-right-container">
-              <small class="label pull-right bg-yellow">12</small>
-              <small class="label pull-right bg-green">16</small>
-              <small class="label pull-right bg-red">5</small>
-            </span>
-          </a>
-        </li>
-        <li class="treeview">
-          <a href="#">
-            <i class="fa fa-folder"></i> <span>Examples</span>
-            <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
-            </span>
-          </a>
-          <ul class="treeview-menu">
-            <li><a href="pages/examples/invoice.html"><i class="fa fa-circle-o"></i> Invoice</a></li>
-            <li><a href="pages/examples/profile.html"><i class="fa fa-circle-o"></i> Profile</a></li>
-            <li><a href="pages/examples/login.html"><i class="fa fa-circle-o"></i> Login</a></li>
-            <li><a href="pages/examples/register.html"><i class="fa fa-circle-o"></i> Register</a></li>
-            <li><a href="pages/examples/lockscreen.html"><i class="fa fa-circle-o"></i> Lockscreen</a></li>
-          </ul>
-        </li>
     <!-- /.sidebar -->
   </aside>
+
 
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
@@ -289,13 +221,13 @@
 <table class="table table-striped table-dark">
   <thead>
     <tr>
-      <th scope="col">Name</th>
-      <th scope="col">Cpf</th>
-      <th scope="col">Address</th>
-      <th scope="col">Number phone</th>
-      <th scope="col">Date of birth</th>
-      <th scope="col">Email</th>
-      <th scope="col">Sex</th>
+      <th scope="col">NOME</th>
+      <th scope="col">CPF</th>
+      <th scope="col">ENDEREÇO</th>
+      <th scope="col">NÚMERO DE TELEFONE</th>
+      <th scope="col">DATA DE NASCIMENTO</th>
+      <th scope="col">EMAIL</th>
+      <th scope="col">SEXO</th>
       <th colspan="3"></th>
     </tr>
   </thead>
